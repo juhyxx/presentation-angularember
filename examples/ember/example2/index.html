@@ -1,0 +1,43 @@
+<html ng-app="app">
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.9.0-beta.1/ember.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <script type="text/x-handlebars" data-template-name="count">
+            <label>
+                Range 1 ({{range1}})
+                {{input type="range" value=range1}}
+            </label>
+            <label>
+                Range 2 ({{range2}})
+                {{input type="range" value=range2}}
+            </label>
+            <label>
+                Input 1 ({{text1}})
+                {{input type="number" value=text1}}
+            </label>
+            <label>
+                Input 2 ({{text2}})
+                {{input type="number" value=text2}}
+            </label>
+
+            <button {{action 'count'}}>Count</button>
+        <hr>
+        <div>
+            Range1 + Range 2 = {{output1}}
+        </div>
+        <div>
+            Text1 + Text 2 = {{output2}}
+        </div>
+    </script>
+</body>
+
+</html>

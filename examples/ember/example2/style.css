@@ -15,3 +15,6 @@ label  {
 label input{
 	float: right;
 }
+[type=range] {
+	width: 290px;
+}

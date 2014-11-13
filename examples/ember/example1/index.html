@@ -1,0 +1,27 @@
+<html ng-app="app">
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.9.0-beta.1/ember.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body ng-controller="Ctrl">
+    <script type="text/x-handlebars" data-template-name="app">
+        <label>
+            2-way binding
+            {{input type="text" value=val}}
+        </label>
+        <hr>
+        <label>
+            Output
+            {{input type="text" value=val}}
+        </label>
+    </script>
+</body>
+
+</html>

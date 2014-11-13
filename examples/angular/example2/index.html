@@ -1,0 +1,39 @@
+<html ng-app="app">
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="Ctrl">
+    <form name="calc" novalidate>
+        <label>
+            Range 1 ({{range1}})
+            <input type="range" ng-model="range1">
+        </label>
+        <label>
+            Range 2 ({{range2}})
+            <input type="range" ng-model="range2">
+        </label>
+        <label>
+            Input 1 ({{text1}})
+            <input type="number" ng-model="text1" ng-required="true">
+        </label>
+        <label>
+            Input 2 ({{text2}})
+            <input type="number" ng-model="text2" ng-required="true ">
+        </label>
+
+        <button ng-click="count()" ng-disabled="calc.$invalid">Count</button>
+    </form>
+    <hr>
+    <div>
+        Range1 + Range 2 = {{output1}}
+    </div>
+    <div>
+        Text1 + Text 2 = {{output2}}
+    </div>
+</body>
+
+</html>
