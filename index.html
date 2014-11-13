@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Angular vs. Ember</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Miroslav Juhos">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,10 +15,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/add.css">
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -42,7 +43,7 @@
 			<div class="slides">
 
 				<section>
-					<h1>Angular vs. Ember</h1>	
+					<h1>Angular<br>vs. <br>Ember</h1>	
 				</section>
 				
 				<section>
@@ -71,7 +72,7 @@
 								<td>
 									<ul>
 										<li>templates</li>
-										<li>UI components as HMTL templates</li>
+										<li>UI as HTML templates</li>
 										<li>
 											<a href="http://underscorejs.org/">Underscore</a>, 
 											<a href="https://angularjs.org/">Angular</a>, 
@@ -89,13 +90,14 @@
 							<li>templates</li>
 							<li>2-way binding</li>
 							<li>routing</li>
+							<li>MVC</li>
 						</ul>
 					</section>
 					
 					<section>
 						<h1>Templates</h1>
 						<ul>
-							<li>allow render UI elements into templates</li>
+							<li>allow bind events into templates</li>
 						</ul>
 					</section>
 
@@ -120,11 +122,49 @@
 				<section>
 					<section>
 						<h1>Angular</h1>
+						<img src="angular.png" style="display:block;margin:auto;background-color:transparent;border:0;box-shadow: none;">
+					</section>
+
+					<section>
+						<h1>Foundation stones <small>Angular</small></h1>
+						<ul>
+							<li>scope</li>
+							<li>dependency injection</li>
+							<li>controller</li>
+							<li>directive</li>
+							<li>service</li>
+							<li>filters</li>
+							<li>routing</li>
+
+							<li>provider</li>
+							<li>constant</li>
+							<li>value</li>
+							<li>factory</li>
+						</ul>
+					</section>
+
+					<section>
+						<h1>Templates <small>Angular</small></h1>
 					</section>
 				</section>
 
 				<section>
-					<h1>Ember</h1>
+					<section>
+						<h1>Ember</h1>
+						<img src="ember.png" style="display:block;margin:auto;background-color:transparent;border:0;box-shadow: none;">
+					</section>
+
+					<section>
+						<h1>Foundation stones <small>Ember</small></h1>
+
+						<ul>
+							<li>handlebars</li>
+							<li>actions</li>
+							<li>routing</li>
+							<li>views</li>
+							<li>components</li>
+						</ul>
+					</section>
 				</section>
 				
 			</div>
@@ -134,7 +174,6 @@
 		<script src="js/reveal.min.js"></script>
 
 		<script>
-
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({

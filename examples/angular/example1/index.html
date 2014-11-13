@@ -1,0 +1,25 @@
+<html ng-app="app">
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="Ctrl">
+	<label>
+		One way binding
+		<input type="text" ng-value=val>
+	</label>
+	<label>
+		2-way binding
+		<input type="text" ng-model=val>
+	</label>
+	<hr>
+	<label>
+		Output
+		<input type="text" ng-model=val>
+	</label>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.reveal h1 {
+	  -webkit-animation: myfirst 10s infinite;
+}
+
+small {
+	color: #e7ad52;
+	text-shadow: 0 0 10px #e7ad52;
+
+}
+
+@-webkit-keyframes myfirst {
+    0% {text-shadow: 0 0 3px white;}
+    50% {text-shadow: 0 0 20px white;}
+}
