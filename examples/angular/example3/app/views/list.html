@@ -1,0 +1,23 @@
+<table class="list table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Estimated</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in list">
+            <td>{{item.name}}</td>
+            <td>{{item.estimated | interval}}</td>
+            <td>{{item.duration | interval}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
