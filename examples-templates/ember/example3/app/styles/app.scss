@@ -1,0 +1,17 @@
+$body-bg: #EFEFEF;
+
+$icon-font-path: "fonts/";
+// bower:scss
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+html, body {
+  margin: 20px;
+}
+
+
+input {
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding : 5px;
+}
