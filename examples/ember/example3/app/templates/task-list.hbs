@@ -1,0 +1,25 @@
+<table class="list table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Estimated</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each item in list}}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{format-interval item.estimated}}</td>
+            <td>{{format-interval item.duration}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>

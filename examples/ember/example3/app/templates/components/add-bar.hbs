@@ -1,0 +1,11 @@
+<article class="row">
+    <section class="col-sm-6">
+        {{input type="text" placeholder="Taskname" value=name}}
+    </section>
+    <section class="col-sm-4">
+        {{input type="number" placeholder="Estimate time" value=estimated}}
+    </section>
+    <section class="col-sm-2">
+        <button class="btn col-xs-12" {{action "add"}}>Add task</button>
+    </section>
+</article>
