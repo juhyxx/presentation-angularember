@@ -3,9 +3,12 @@
         {{input type="text" placeholder="Taskname" value=name}}
     </section>
     <section class="col-sm-4">
-        {{input type="number" placeholder="Estimate time" value=estimated}}
+        {{input type="text" placeholder="Estimate time" value=estimated}}
     </section>
     <section class="col-sm-2">
-        <button class="btn col-xs-12" {{action "add"}}>Add task</button>
+        <button class="btn col-xs-12" {{action "add"}}>
+			<span class="glyphicon glyphicon-play"></span>
+        	Add task
+        </button>
     </section>
 </article>

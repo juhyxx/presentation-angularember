@@ -12,18 +12,21 @@ export default Ember.Controller.extend({
 		duration: 987654321
 	}],
 
-	start: function() {
-		var self = this,
-			interval = setInterval(function() {
-				self.tick();
-			}, 500);
+	isStopped: true,
 
-		this.set('interval', interval);
+	start: function() {
+		var self = this;
+
+		this.set('interval', setInterval(function() {
+				self.tick();
+			}, 500))
+			.set('isStopped', false);
 	},
 
 	stop: function() {
 		clearInterval(this.get('interval'));
-		this.set('interval', undefined);
+		this.set('interval', undefined)
+			.set('isStopped', true);
 	},
 
 	tick: function() {
@@ -32,9 +35,11 @@ export default Ember.Controller.extend({
 			progress = 0;
 
 		progress = Math.round(((now - data.time) / data.estimated) * 100);
-		this.set('percentage', Math.min(progress, 100));
-		this.set('name', data.name + ' ' + progress + '%');
-		this.set('time', now - data.time);
+
+		Ember.set(this.list[0], 'duration', now - data.time);
+		this.set('percentage', Math.min(progress, 100))
+			.set('name', data.name + ' ' + progress + '%')
+			.set('time', now - data.time);
 	},
 
 	actions: {
@@ -43,12 +48,12 @@ export default Ember.Controller.extend({
 			this.list.unshiftObject({
 				name: name,
 				estimated: estimated,
-				time: new Date().getTime()
+				time: new Date().getTime(),
+				duration: 0
 			});
 			this.start();
 		},
 		stop: function() {
-			console.info('stop');
 			this.stop();
 		}
 	}
