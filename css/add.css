@@ -12,3 +12,25 @@ small {
     0% {text-shadow: 0 0 3px white;}
     50% {text-shadow: 0 0 20px white;}
 }
+b.big {
+	font-size: 70px !important;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 70px;
+
+
+}
+
+blockquote:before {
+    display: block;
+    float: left;
+    margin: 10px 15px 0 0;
+    font-size: 100px; /* let's make it a big quote! */
+    content: open-quote; /* here we define our :before as a smart quote. It could be any content, even the HTML entity alternative to this opening quote, that is “ */
+    color: #bababa;
+    text-shadow: 0 1px 1px #909090;
+}
+blockquote:after {
+   content: close-quote;
+    /* could be content:close-quote; but lets keep it clean*/
+}
