@@ -196,7 +196,7 @@
                     <h1>Dependency injection
                         <small>Angular</small>
                     </h1>
-                    <pre><code class="javascript">
+                    <pre><code data-trim data-trim class="javascript">
 angular.module('myModule', [])
 .factory('serviceId', ['depService', function(depService) {
   // ...
@@ -240,7 +240,7 @@ angular.module('myModule', [])
                     <h1>Bind variables
                         <small>Angular templates</small>
                     </h1>
-                    <pre><code class="javascript">
+                    <pre><code data-trim class="javascript">
                         {{varible}} // sanitized
                         {{{variable}}} //safe
                     </code></pre>
@@ -251,7 +251,7 @@ angular.module('myModule', [])
                         <small>Angular templates</small>
                     </h1>
 
-                    <pre><code>
+                    <pre><code data-trim>
                         ng-app
                         ng-model
                         ng-click
@@ -267,16 +267,30 @@ angular.module('myModule', [])
                     <h1>Filters
                         <small>Angular templates</small>
                     </h1>
-                    value formatters <br>
+                    value formatters
+                    <br>
 
-                     <em>currency , number, date,json, lowercase, uppercase, limitTo, orderBy</em>
+                    <em>currency , number, date,json, lowercase, uppercase, limitTo, orderBy</em>
 
-                    <pre><code>
+                    <pre><code data-trim>
                         {{ expression | filter }}   
                     </code></pre>
 
                 </section>
 
+                <section>
+
+                    <h1>Examples</h1>
+                    <h2>Angular</h2>
+                    <ul>
+                        <li><a href="examples/angular/example1/">Example 1</a> 
+                        </li>
+                        <li><a href="examples/angular/example2/">Example 2</a>
+                        </li>
+                        <li><a href="examples/angular/example3/">Example 3</a>
+                        </li>
+                    </ul>
+                </section>
 
             </section>
 
@@ -297,31 +311,117 @@ angular.module('myModule', [])
                         <li>routing</li>
                         <li>views</li>
                         <li>components</li>
+                        <li>Ember <i>Magics</i>
+                        </li>
                     </ul>
                 </section>
+
+                <section>
+                    <h1>Templates
+                        <small>Ember</small>
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="http://handlebarsjs.com">Handlebars</a>
+                        </li>
+                        <li>unable to use more complex expressions</li>
+                    </ul>
+                    <pre><code data-trim class="html">
+<ul>
+  {{#each items}}
+    <li>{{agree_button}}</li>
+  {{/each}}
+</ul>
+</code></pre>
+
+                </section>
+
+                <section>
+                    <h1>Actions
+                        <small>Templates Ember</small>
+                    </h1>
+                    Template:
+                    <pre><code data-trim class="html">
+     &lt;button {{action 'showMore'}}>Show More...</button>
+</code></pre>
+                    Controller:
+                    <pre><code data-trim class="javascript">
+actions: {
+    expand: function() {
+        ...code...
+    }
+}
+</code></pre>
+                </section>
+
+                <section>
+                    <h1>Components
+                        <small>Ember</small>
+                    </h1>
+                    Template
+                    <pre><code data-trim class="html"> 
+{{navigation-bar}}
+</code></pre>
+                    navigation-bar.js
+                    <pre><code  data-trim class="javascript">
+    App.NavigationBarComponent = Ember.Component.extend({
+  classNames: ['primary']
+});
+</code></pre>
+                </section>
+
+                <section>
+                    <h1>Views
+                        <small>Ember</small>
+                    </h1>
+
+                    very simillar to components
+                </section>
+
+                <section>
+                    <h1>Magics
+                        <small>Ember</small>
+                    </h1>
+
+                    When your application boots, Ember will look for these objects:
+                    <ul>
+                        <li>App.ApplicationRoute</li>
+                        <li>App.ApplicationController</li>
+                        <li>the
+                            <em>application</em>template</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Magics
+                        <small>Ember</small>
+                    </h1>
+
+
+                    If you create route
+                    <em>/favorites</em>, Ember.js will look for these objects:
+
+                    <ul>
+                        <li>App.FavoritesRoute</li>
+                        <li>App.FavoritesController</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Examples
+                        <small>Ember</small>
+                    </h1>
+                    <ul>
+                        <li><a href="examples/ember/example1/">Example 1</a>
+                        </li>
+                        <li><a href="examples/ember/example2/">Example 2</a>
+                        </li>
+                        <li><a href="examples/ember/example3/">Example 3</a>
+                        </li>
+                    </ul>
+                </section>
+
             </section>
-
-            <section>
-                <h1>Examples</h1>
-                <h2>Angular</h2>
-                <ul>
-                    <li><a href="examples/angular/example1/">Example 1</a> 
-                    </li>
-                    <li><a href="examples/angular/example2/">Example 2</a>
-                    </li>
-                    <li><a href="examples/angular/example3/">Example 3</a>
-                    </li>
-                </ul>
-
-                <h2>Ember</h2>
-                <ul>
-                    <li><a href="examples/ember/example1/">Example 1</a>
-                    </li>
-                    <li><a href="examples/ember/example2/">Example 2</a>
-                    </li>
-                    <li><a href="examples/ember/example3/">Example 3</a>
-                    </li>
-                </ul>
 
         </div>
     </div>
