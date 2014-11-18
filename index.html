@@ -33,8 +33,8 @@
     </script>
 
     <!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
 </head>
 
 <body>
@@ -139,11 +139,6 @@
                 </section>
 
                 <section>
-                	<h1>Templates</h1>
-                	
-                </section>
-
-                <section>
                     <h1>2-way binding</h1>
                     <b class="big">variable to UI<br> UI to variable</b>
                 </section>
@@ -233,16 +228,55 @@ angular.module('myModule', [])
                 </section>
 
                 <section>
-                    <h1>Filters
+
+                    <h1>Templates
                         <small>Angular</small>
                     </h1>
-                    value formatters ( currency , number, date,json, lowercase, uppercase, limitTo, orderBy)
+
+                    predefined directives form controls filters
+                </section>
+
+                <section>
+                    <h1>Bind variables
+                        <small>Angular templates</small>
+                    </h1>
+                    <pre><code class="javascript">
+                        {{varible}} // sanitized
+                        {{{variable}}} //safe
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1>Predefined directives
+                        <small>Angular templates</small>
+                    </h1>
 
                     <pre><code>
-                		{{ expression | filter }} 	
-                	</code></pre>
+                        ng-app
+                        ng-model
+                        ng-click
+                        ng-href
+                        ng-class
+                        ng-if
+                        ng-repeat
+                    </code></pre>
 
                 </section>
+
+                <section>
+                    <h1>Filters
+                        <small>Angular templates</small>
+                    </h1>
+                    value formatters <br>
+
+                     <em>currency , number, date,json, lowercase, uppercase, limitTo, orderBy</em>
+
+                    <pre><code>
+                        {{ expression | filter }}   
+                    </code></pre>
+
+                </section>
+
 
             </section>
 
@@ -271,7 +305,7 @@ angular.module('myModule', [])
                 <h1>Examples</h1>
                 <h2>Angular</h2>
                 <ul>
-                    <li><a href="examples/angular/example1/">Example 1</a> 	 
+                    <li><a href="examples/angular/example1/">Example 1</a> 
                     </li>
                     <li><a href="examples/angular/example2/">Example 2</a>
                     </li>
