@@ -38,7 +38,7 @@ export default Ember.Controller.extend({
 
 		Ember.set(this.list[0], 'duration', now - data.time);
 		this.set('percentage', Math.min(progress, 100))
-			.set('name', data.name + ' ' + progress + '%')
+			.set('name', ' %@ %@%'.fmt(data.name, progress))
 			.set('time', now - data.time);
 	},
 

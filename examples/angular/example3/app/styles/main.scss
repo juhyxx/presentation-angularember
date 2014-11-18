@@ -97,3 +97,9 @@ input {
   margin-bottom: 0.5em;
   padding : 5px;
 }
+
+table {
+  td:first-child {
+    width: 60%;
+  }
+}

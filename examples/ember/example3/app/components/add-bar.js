@@ -7,6 +7,8 @@ export default Ember.Component.extend({
 	estimated: 0,
 
 	parseInput: function(text) {
+		text = text || '1m';
+
 		var out = 0,
 			splited = text.split(/\s*(\d+h)?\s?(\d+m)? ?(\d+s)?\s*/),
 			ms = [
